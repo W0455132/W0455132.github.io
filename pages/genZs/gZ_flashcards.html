@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+
+    <title></title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/examples/starter-template/starter-template.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="gZ_styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <a class="navbar-brand" href="#">keeping up with the <h4>Gen-Zs</h4></a>
+      <ul class="nav nav-pills">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">music<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">fashion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">media</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+
+      <div class="title">
+        <h1>flashcards</h1>
+      <p class="lead hidden-xs-down">Use our flashcards to keep on top of the slang of our youth today <br>
+        Click or tap the word card to flip it over to its definition</p>
+      <p class="hidden-sm-down">Keeping up with the kids today is harder than ever with trends moving at the speed of the internet <br>
+        Our flashcards are updated weekly so you can stay on top of the current vernacular!</p>
+      </div>
+
+      <div class="flip">
+        <div class="front">
+          <h2 id="word"></h2>
+        </div>
+        <div class="back">
+          <h7 id="definition"></h7>
+        </div>
+        <div id="sentence" class="collapse">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sentence">See it used in a sentence</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-primary" id="newWord" onclick="getNewWord()">Get a new word</button>
+            </div>
+          </div>
+      </div>
+
+
+    </div><!-- /.container -->
+
+<script type="text/javascript">
+$(function(){
+    $(".flip").flip();
+});
+</script>
+
+<script src="gZ_script2.js" charset="utf-8"></script>
+    <!-- jQuery first, then Bootstrap JS. -->
+
+
+  </body>
+</html>

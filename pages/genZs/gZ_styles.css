@@ -1,0 +1,115 @@
+
+
+
+/* page styles */
+
+body {
+  background-image: url(glitter.png);
+  background-size: cover;
+}
+
+.navbar {
+  color: white;
+  background-color: rgba(255, 0, 142, 0.7);
+}
+
+nav a {
+  color: white;
+}
+
+nav h4 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 2px cyan;
+}
+
+nav img {
+  width: 40px;
+}
+
+nav li {
+  float: right;
+  text-align: right;
+}
+
+
+.title {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 80px
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  color: gold;
+  margin: 20px;
+  text-shadow: 0px 2px 5px white;
+}
+
+p {
+    text-shadow: 0px 2px 5px black;
+    color: white;
+}
+
+
+
+/* flip card styles */
+
+.flip {
+    height: 199px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.flip .front {
+    padding: 70px 10px 0px 10px;
+    width: 300px;
+    height: auto;
+    background: gold;
+    border: solid 2px magenta;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.flip .front h2 {
+  color: rgba(0, 0, 0, 0.7) ;
+  text-shadow: 2px 2px 10px magenta;
+}
+
+.flip .back {
+  padding: 30px 10px 0px 10px;
+  width: 300px;
+  height: auto;
+  background: gold;
+  border: solid 2px magenta;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px black;
+}
+
+.flip .back h7 {
+  color: rgba(0, 0, 0, 0.7) ;
+  text-shadow: 2px 2px 10px magenta;
+}
+
+/* button and drop-box styles */
+
+#sentence {
+  color: white;
+  text-align: center;
+  background-color: rgba(255, 0, 142, 0.7);
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px white;
+
+}
+
+.btn{
+  margin: 20px;
+  border: 1px solid white;
+  box-shadow: 1px 1px 10px white;
+}

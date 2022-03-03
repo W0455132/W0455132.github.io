@@ -1,0 +1,274 @@
+/* colour bank
+rich black = rgba(1, 22, 30, 1)
+midnight eagle green = rgba(18, 69, 89, 1)
+teal blue = rgba(89, 131, 146, 1)
+cambridge blue = rgba(174, 195, 176, 1)
+beige = rgba(239, 246, 224, 1)
+*/
+
+/* html {
+    background-color: rgba(174, 195, 176, 0.8);
+} */
+
+body {
+  background-color: rgba(174, 195, 176, 0.8);
+  font-family: 'Yu Gothic', cursive;
+  color: rgba(1, 22, 30, 1);
+
+
+}
+
+.album {
+  background-color: rgba(174, 195, 176, 1);
+}
+
+
+/* navbar styles */
+
+.navbar {
+  background-color: rgba(18, 69, 89, 1);
+  color: rgba(89, 131, 146, 1)
+
+}
+
+.navbar-brand {
+  color: rgba(239, 246, 224, 1);
+
+  font-size: 55px;
+}
+
+.navbar-brand:hover {
+  color: rgba(174, 195, 176, 1)
+}
+
+.navbar-brand img {
+  height: 60px;
+  margin: 20px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  opacity: 0.9;
+}
+
+.navbar ul a {
+  color: rgba(89, 131, 146, 1)
+}
+
+.navbar ul a:hover {
+  color: rgba(239, 246, 224, 1);
+}
+
+.navbar-dark {
+
+}
+
+/* workxp featurette styles */
+
+.featurette {
+  background-color: rgba(239, 246, 224, 1);
+  border: 3px solid rgba(18, 69, 89, 1);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+.featurette:nth-of-type(even) {
+
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+.featurette-image {
+  height: auto;
+  /* height: 200px; */
+  /*margin: auto;*/
+  /*width: 100%;*/
+  /*height: auto;*/
+  /*max-width: 250px;*/
+}
+
+.featurette h2 {
+  font-weight: bold;
+}
+
+.featurette .text-muted {
+  font-weight: normal;
+}
+
+.duties {
+  margin-top: 20px;
+}
+
+.duties li {
+  margin: 5px;
+}
+
+
+.btn {
+   background-color: rgba(18, 69, 89, 0.75);
+   margin: 8px;
+   color: rgba(239, 246, 224, 1);
+}
+
+.btn-info:hover {
+
+}
+
+.btn-info:active {
+
+
+}
+
+/* album styles */
+
+.album img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card {
+  background-color: rgba(239, 246, 224, 1);
+  border: 3px solid rgba(18, 69, 89, 1);
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+
+
+.flip {
+    height: 800px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 4vh;
+    text-align: center;
+
+}
+.flip .front {
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    background-color: rgba(89, 131, 146, 1);
+    border: 3px solid rgba(18, 69, 89, 1);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.flip h2 {
+  color: rgba(57, 47, 90, 1) ;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  font-size: 40px;
+
+}
+
+.flip .back {
+  padding: 10px 10px 0px 10px;
+  width: 300px;
+  height: auto;
+  background-color: rgba(89, 131, 146, 1);
+  border: 3px solid rgba(18, 69, 89, 1);
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px black;
+
+}
+
+.back img {
+  width: 300px;
+  margin-top: 10vh;
+}
+
+
+.innerstat {
+  background-color: rgba(239, 246, 224, 1);
+  list-style: none;
+  border: 3px solid rgba(18, 69, 89, 1);
+  border-radius: 10px;
+
+}
+
+.statlist {
+  background-color: rgba(239, 246, 224, 1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 3px solid rgba(18, 69, 89, 1);
+  border-radius: 10px;
+}
+
+.statlist ul {
+  list-style-type: none;
+
+}
+
+.statlist p {
+  margin-bottom: 0.5rem;
+}
+
+.statlist h4 {
+  margin-bottom: 1rem;
+}
+
+.statpic {
+  background-color: rgba(239, 246, 224, 1);
+  height: 622px;
+  width: 474px;
+  /* margin: 10px; */
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  border: 3px solid rgba(18, 69, 89, 1);
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.statpic img {
+  margin: 4vh;
+  border-radius: 10px;
+  width: 83%;
+  opacity: 0.8;
+}
+
+.namebox {
+  margin-bottom: 30px;
+}
+
+.footer {
+  margin-top: 20px;
+
+
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  position: relative;
+}
+
+.chartbox {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+
+.mobi-row > .col-8 {
+  height: 100%;
+}
+
+
+@media screen and (max-width: 750px) {
+  .small-column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.img-box img{
+  height: 400px;
+  width: auto;
+}

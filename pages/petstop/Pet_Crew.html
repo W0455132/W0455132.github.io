@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Pet Stop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="http://v4-alpha.getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="pet_styles.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <a href="#" class="navbar-brand" id="tagline"> <img src="images/LogoPink.png" alt="">"it's rating cats and dogs"</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#myCarousel">Announcements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Top Rated Pets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Submit Entry</a>
+        </li>
+      </ul>
+    </nav>
+        </header>
+
+        <main role="main">
+
+          <section class="jumbotron text-center">
+            <div class="container">
+              <img src="images/UCtestLogoBig.png" alt="">
+              <h1 class="jumbotron-heading" >"it's rating cats and dogs"</h1>
+              <p class="lead text-muted"><strong>All Pets. No Drama.</strong></p>
+              <p>
+
+			  				<!-- tim button start -->
+                <a class="btn btn-secondary my-2" id="onlyCats">Cats Only</a>
+                <a class="btn btn-secondary my-2" id="onlyDogs">Dogs Only</a>
+						<!-- end tim button -->
+
+              </p>
+              </p>
+            </div>
+            <a class="btn btn-secondary my-2" id="allPets">All Pets</a>
+          </section>
+
+		 <!-- tim start  -->
+		            <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+              <div class="navbar-brand d-flex align-items-center">
+                <strong>Search:</strong>
+                  <form class="form-inline">
+                  <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Type a name" aria-label="Search" id="search">
+                </form>
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+
+
+		  <!-- tim end -->
+
+          <div class="container-fluid padding">
+            <div class="row welcome text-center">
+              <div class="col-12">
+                <h1>Meet the Pet Crew</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="album py-5 bg-light">
+            <div class="container">
+
+              <div class="row">
+				<div class="card-deck">
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img id="myImg" class="card-img-top" src="images/Haggis.jpg" alt="Haggis">
+                    <div id="myModal" class="modal">
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                    <div class="card-body">
+                      <h4 class="card-text">haggis</h4>
+					  <h5 hidden>cat</h5>
+                      <p class="card-text">Likes: violent 4 a.m. cuddles</p>
+                      <p class="card-text">Dislikes: bulletin boards</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <div class="ddm">
+                          </div>
+
+                          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Comment</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Username:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- <small class="text-muted">9</small> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img id="myImg2" class="card-img-top" src="images/Rust.jpg" alt="Rustin Cohle">
+                    <div id="myModal2" class="modal">
+                        <img class="modal-content2" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                    <div class="card-body">
+                      <h4 class="card-text">rust</h4>
+					  <h5 hidden>cat</h5>
+                      <p class="card-text">Quote: "Meerrrrooowwwwwww"</p>
+                      <p class="card-text">Translation: 'I think human consciousness was a tragic misstep in evolution'</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                          <div class="ddm">
+                          </div>
+                          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Comment</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Username:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- <small class="text-muted">9</small> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img id="myImg3" class="card-img-top" src="images/Mocha.png" alt="Mocha">
+                    <div id="myModal3" class="modal">
+                        <img class="modal-content3" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                    <div class="card-body">
+                      <h4 class="card-text">mocha</h4>
+					  <h5 hidden>dog</h5>
+                      <p class="card-text">Likes: long walks on the beach</p>
+                      <p class="card-text">Dislikes: Haggis(the cat, not the traditional Scottish meal - she loves that)</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                          <div class="ddm">
+                          </div>
+                          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Comment</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Username:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- <small class="text-muted">9</small> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+				</div>
+              </div>
+            </div>
+          </div>
+
+            <div class="album py-5 bg-light">
+              <div class="container">
+
+                <div class="row">
+				<div class="card-deck">
+
+
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                    <img id="myImg4" class="card-img-top" src="images/Fernie.png" alt="Fernie">
+                    <div id="myModal4" class="modal">
+                        <img class="modal-content4" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                      <div class="card-body">
+                        <h4 class="card-text">fernie</h4>
+						<h5 hidden>cat</h5>
+
+                        <p class="card-text">Likes: long naps on the beach</p>
+                        <p class="card-text">Dislikes: the vaccuum cleaner</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                            <div class="ddm">
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Comment</button>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">Username:</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="message-text" class="col-form-label">Message:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <!-- <small class="text-muted">9</small> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                    <img id="myImg5" class="card-img-top" src="images/Fergus.png" alt="Fergilicious">
+                    <div id="myModal5" class="modal">
+                        <img class="modal-content5" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                      <div class="card-body">
+                        <h4 class="card-text">fergus</h4>
+						<h5 hidden>dog</h5>
+                        <p class="card-text">Likes: treats</p>
+                        <p class="card-text">Dislikes: the mailman</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                            <div class="ddm">
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Comment</button>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">Username:</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="message-text" class="col-form-label">Message:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <!-- <small class="text-muted">9</small> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                    <img id="myImg6" class="card-img-top" src="images/Lucy.jpg" alt="Lucy">
+                    <div id="myModal6" class="modal">
+                        <img class="modal-content6" id="img01">
+                        <div id="caption"></div>
+                        </div>
+                      <div class="card-body">
+                        <h4 class="card-text">lucy</h4>
+						<h5 hidden>cat</h5>
+                        <p class="card-text">Likes: wicker</p>
+                        <p class="card-text">Dislikes: cucumbers</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                            <div class="ddm">
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Comment</button>
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">Username:</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="message-text" class="col-form-label">Message:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <!-- <small class="text-muted">9</small> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+					</div>
+                </div>
+              </div>
+            </div>
+
+
+            <link href="carousel-fit.css" rel="stylesheet" />
+
+            <script src="carousel-fit.js"/></script/>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+              </ol>
+                <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container slide">
+                      <img class="container slide" src="images/foodsale.png" alt="container slide" width="100" margin="auto" align="center">
+                    <div class="carousel-caption text-left">
+                      <h2><span class='spacer'>Local Sales on pet food</h2></span>
+                      <p1><span class='spacer'>That is right, you read that right! we have had a famous Bearded Cyber Bandit make a program that would find local pet stores with the lowest prices and even a navigation tool to help you find them.</span></p1>
+                      <a class="btn btn-lg btn-secondary" role="button">Download App Here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="second-slide">
+                  <div class="container slide">
+                      <img class="container slide" src="images/newsletter.png" alt="container slide" width="100" margin="auto" align="center">
+                    <div class="carousel-caption text-left">
+                      <h2><span class='spacer'>Our Newsletter</h2></span>
+                      <p1><span class='spacer'>Hey you, yes you! Why should I sign up for a newsletter you ask? Here is why: Our Newsletter has all the best stuff in it! Including: Pet pitcure of the week, Coupons for local Stroes, Events near you, and tips and tricks on being a better pet owener. Plus, if you sign up within the next week, you will get a free pair of socks. So DO NOT delay! Sign up now!</p1></span>
+                      <p><a class="btn btn-lg btn-secondary" role="button">Subscribe</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                  <div class="container slide">
+                    <img class="container slide" src="images/Winners.jpg" alt="container slide" width="100" margin="auto" >
+                    <div class="carousel-caption text-left">
+                    <h2><span class='spacer'>Shout Out To Last weeks winner!</h1></span>
+                      <p1><span class='spacer'>Our winner from last week, with the most votes we have EVER revceived on one picture...here is Snowball III! Thanks to Lisa Simpson of Springfield for the submission.</p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </main>
+
+              <footer class="down">
+              <p class="float-left">
+              <a href="#" class="navbar-brand" id="tagline"> <img id="below" src="images/LogoPink.png" alt="">
+              </p>
+                <div class="container">
+                  <p class="float-right">
+                    <a class="nav-link" href="Pet_Crew.html">Back to top</a>
+                  </p>
+                  <p class="bottom">For more information, please contact us via email:</p>
+                  <p class="bottom"><a class="bottom" href="#">pet.crew@campus.nscc.ca</a></p>
+                  <p class="bottom">Come back and see us soon!</p>
+                </div>
+              </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="pets.js" charset="utf-8"></script>
+  </body>
+</html>

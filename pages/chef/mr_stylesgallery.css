@@ -1,0 +1,58 @@
+/* dark orange - rgba(255, 136, 17, 1)
+orange yellow crayola - rgba(244, 208, 111, 1)
+floral white - rgba(255, 248, 240, 1)
+middle blue green - rgba(157, 217, 210, 1)
+space cadet - rgba(57, 47, 90, 1) */
+
+
+
+.gallselect {
+  margin-top: 4vh;
+  border: 2px solid rgba(244, 208, 111, 1);
+  background: rgba(255, 136, 17, 1);
+  font-family: 'Yu Gothic', cursive;
+
+}
+
+.gallselect a {
+    color: rgba(57, 47, 90, 1);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.gallselect a:hover {
+  color: rgba(244, 208, 111, 1);
+}
+
+#gallery {
+  height: 1000px;
+  margin-top: 4vh;
+}
+
+.float {
+  float: left;
+}
+
+.float img {
+  border: 2px solid rgba(255, 136, 17, 1);
+  border-radius: 10px;
+  padding: 3px;
+  background-color: rgba(244, 208, 111, 1);
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+
+.rowpics {
+  height: 30vh;
+}
+
+
+.gallery img {
+  float: left;
+  background-color: rgba(244, 208, 111, 1);
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid rgba(255, 136, 17, 1);
+  border-radius: 10px;
+}

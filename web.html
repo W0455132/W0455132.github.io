@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Myra - Gallery</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" ></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+<script src="mr_scriptgallery.js" charset="utf-8" defer></script>
+
+  </head>
+
+
+  <body>
+  <nav class="navbar navbar-default navbar-static-top">
+    <a href="stats.html" class="navbar-brand" id="tagline"> <img src="images\logo.jpg" alt="">Myra Richards</a>
+    <ul class="nav nav-pills">
+      <!--        <li class="nav-item active">-->
+      <!--          <a class="nav-link" href="stats.html">stats<span class="sr-only">(current)</span></a>-->
+      <!--        </li>-->
+      <li class="nav-item">
+        <a class="nav-link" href="xp.html">work experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="docs.html">documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="web.html">weblinks</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="mobi.html">mobile</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <hr class="m-4">
+          <h2 data-toggle="collapse" href="#introCollapseweb" >Web Development</h2>
+          <p class="d-none d-md-block">
+            A collection of web-based projects completed over the course of my terms at NSCC. These
+            projects were self-defined and meant to demonstrate qualities of responsive web design and
+            intuitive user interfacing.
+          </p>
+          <hr class="m-4">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+    <div class="album py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" src="images/snake.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-text">Slither-In</h4>
+                <p class="collapse card-text" id="snake">A classic game of Snake coded in vanilla JavaScript with a Java back-end using Spring Boot, Spring Security, and MySQL. Completed on GitHub as a part of a self-directed group project.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#snake">Description</button>
+                    <a target="_blank" href="./pages/snake/index.html"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                    <a target="_blank" href="https://github.com/W0455132/Snake"><button type="button" class="btn btn-sm btn-outline-secondary">Github</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" src="images/ss_petstop.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-text">the Pet Stop</h4>
+                <p class="collapse card-text" id="psdesc">Pet-rating album site.<br>Introduction to Bootstrap and JQuery libraries. From a single-page group project where I was tasked with the 'style design'.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#psdesc">Description</button>
+                    <a target="_blank" href="./pages/petstop/Pet_Crew.html"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" src="images/ss_mrcv.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-text">Hospitality CV</h4>
+                <p class="collapse card-text" id="cvdesc">Online version of my hospitality CV<br>Introduction to Bootstrap and Charts.js libraries. Multi-page assignment with a DOM derived gallery and interactive elements.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#cvdesc">Description</button>
+                    <a target="_blank" href="./pages/chef/mr_stats.html"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" src="images/ss_genzs.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-text">Keeping up with the Genzs</h4>
+                <p class="collapse card-text" id="gzdesc">Flash cards for staying on top of new slang!<br>Introduction to Boostrap and Jquery libraries</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#gzdesc">Description</button>
+                    <a target="_blank" href="./pages/genZs/gZ_flashcards.html"><button type="button" class="btn btn-sm btn-outline-secondary">Visit</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <p class="text-muted">Inquiries can be made to myrairichards@gmail.com</p>
+    </div>
+  </footer>
+
+
+</html>

@@ -1,0 +1,254 @@
+/* dark orange - rgba(255, 136, 17, 1)
+orange yellow crayola - rgba(244, 208, 111, 1)
+floral white - rgba(255, 248, 240, 1)
+middle blue green - rgba(157, 217, 210, 1)
+space cadet - rgba(57, 47, 90, 1) */
+
+html {
+
+}
+
+body {
+  background-color: rgba(157, 217, 210, 1);
+    font-family: 'Yu Gothic', cursive;
+  color:  rgba(57, 47, 90, 1);
+}
+
+
+/* navbar styles */
+
+.navbar {
+  background-color: rgba(57, 47, 90, 1);
+}
+
+.navbar-brand {
+
+  color:  rgba(255, 136, 17, 1);
+  font-size: 55px;
+}
+
+.navbar-brand:hover {
+  color: rgba(244, 208, 111, 1);
+}
+
+.navbar-brand img {
+  height: 70px;
+  margin: 10px;
+}
+
+.navbar ul a {
+  color: rgba(244, 208, 111, 1);
+}
+
+.navbar ul a:hover {
+  color: rgba(255, 136, 17, 1);
+}
+
+.navbar-dark {
+  background-color: rgba(255, 136, 17, 0.8);
+  color: rgba(157, 217, 210, 1);
+}
+
+/* workxp featurette styles */
+
+.featurette {
+  border: solid 3px rgba(255, 136, 17, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgba(255, 248, 240, 1);
+}
+
+.featurette:nth-of-type(even) {
+  border: solid 3px  rgba(244, 208, 111, 1);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgba(255, 248, 240, 1);
+}
+
+.featurette-image {
+  /* height: 200px; */
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+}
+
+.featurette h2 {
+  font-weight: bold;
+}
+
+.featurette .text-muted {
+  font-weight: normal;
+}
+
+.duties {
+  margin-top: 20px;
+}
+
+.duties li {
+  margin: 5px;
+}
+
+/* references page */
+
+.ref {
+  margin-top: 4vh;
+  padding: 4px;
+  height: auto;
+  background-color: rgba(255, 248, 240, 1);
+  border: solid 3px rgba(255, 136, 17, 1);
+  border-radius: 10px;
+  padding: 20px;
+  /* border-top-left-radius: 25%;
+  border-top-right-radius: 25%; */
+}
+
+.ref img {
+  background-color: rgba(244, 208, 111, 1);
+  border: solid 3px rgba(255, 136, 17, 1);
+}
+
+.refmessage {
+  padding: 10px;
+}
+
+.quotes img {
+  position: absolute;
+  width: 50px;
+  opacity: 0.5;
+  z-index: 99;
+}
+
+.lead {
+  z-index: 1;
+}
+
+.closequotes {
+  margin-left: 90%;
+  margin-right: 0px;
+}
+
+.btn-info {
+  background-color: rgba(57, 47, 90, 1);
+  color: rgba(255, 248, 240, 1);
+}
+
+.btn-info:hover {
+  background-color: rgba(57, 47, 90, 1);
+  color: rgba(244, 208, 111, 1);
+}
+
+.btn-info:active {
+  background-color: rgba(57, 47, 90, 1);
+  color: rgba(244, 208, 111, 1);
+}
+
+.flip {
+    height: 800px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 4vh;
+    text-align: center;
+
+}
+.flip .front {
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    background-color: rgba(244, 208, 111, 1);
+    border: solid 3px rgba(255, 136, 17, 1);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.flip h2 {
+  color: rgba(57, 47, 90, 1) ;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+
+}
+
+.flip .back {
+  padding: 30px 10px 0px 10px;
+  width: 300px;
+  height: auto;
+  background-color: rgba(244, 208, 111, 1);
+  border: solid 3px rgba(255, 136, 17, 1);
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px black;
+
+}
+
+.back img {
+  width: 300px;
+  margin-top: 10vh;
+}
+
+.flip .back h7 {
+  color: rgba(0, 0, 0, 0.7) ;
+}
+
+.innerstat {
+  background-color: rgba(255, 248, 240, 1);
+  list-style: none;
+  border: 2px solid rgba(255, 136, 17, 1);
+  border-radius: 10px;
+
+}
+
+.statlist ul {
+  background-color: rgba(255, 248, 240, 1);
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid rgba(255, 136, 17, 1);
+  border-radius: 10px;
+}
+
+.statpic {
+  background-color: rgba(255, 248, 240,1 );
+  height: 80%;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid rgba(255, 136, 17, 1);
+  border-radius: 10px;
+}
+
+.statpic img {
+  margin: auto;
+  border-radius: 10px;
+  width: 83%;
+  opacity: 0.8;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: rgba(57, 47, 90, 1);
+  color: rgba(255, 248, 240, 1);
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  position: relative;
+}
+
+.chartbox {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/* #mgmtChart {
+  position: relative;
+  width: 10%;
+}
+
+#staffChart {
+  width: 50%;
+} */

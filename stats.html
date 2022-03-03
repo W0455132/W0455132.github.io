@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Myra - Stats</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="script.js" charset="utf-8" defer></script>
+<link rel="stylesheet" href="styles.css">
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <a href="stats.html" class="navbar-brand" id="tagline"> <img src="images\logo.jpg" alt="">Myra Richards</a>
+      <ul class="nav nav-pills">
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link" href="stats.html">stats<span class="sr-only">(current)</span></a>-->
+<!--        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="xp.html">work experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="docs.html">documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">weblinks</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="mobi.html">mobile</a>
+        </li>
+      </ul>
+    </nav>
+
+<div class="container">
+
+    <div class="flip">
+  <div class="front">
+    <div class="innerstat">
+    <h2 id="word">Career Highlights</h2>
+    </div>
+    <div class="statlist container">
+      <div class="row">
+        <div class="col-12"><h4>Languages</h4></div>
+
+        <div class="col-4">
+          <p>Java</p>
+          <p>Python</p>
+          <p>PHP</p>
+        </div>
+
+        <div class="col-4">
+          <p>HTML5</p>
+          <p>CSS/SASS</p>
+          <p>JavaScript</p>
+        </div>
+
+        <div class="col-4">
+          <p>C</p>
+          <p>C++</p>
+          <p>SQL</p>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <p>Years in IT: 1.5</p>
+        </div>
+        <div class="col-6">
+          <p>Years in Workforce: 15</p>
+        </div>
+        <div class="chartbox">
+          <p>Years in Management:</p>
+          <canvas id="mgmtChart" width="50" height="50"></canvas>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-12">
+          <h4>Key Skills</h4>
+        </div>
+        <div class="col-6">
+          <p>Android Development</p>
+          <p>Bootstrap</p>
+      </div>
+      <div class="col-6">
+        <p>Drupal</p>
+        <p>Communication</p>
+
+      </div>
+      </div>
+
+
+
+
+<!--      <ul>-->
+<!--        <li>Years in IT: 1.5</li>-->
+<!--        <li>Years in Workforce: 14</li>-->
+<!--        <li>Management:</li>-->
+
+<!--        <li>Javascript: 10 mos</li>-->
+<!--        <li>Python: 4 mos</li>-->
+<!--        <li>SQL: 4 mos</li>-->
+<!--        <li>Strength:</li>-->
+<!--&lt;!&ndash;        <div class="chartbox">&ndash;&gt;-->
+<!--&lt;!&ndash;          <canvas id="staffChart" width="50" height="50"></canvas>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--      </ul>-->
+
+    </div>
+
+
+
+  </div>
+  <div class="back">
+    <div class="statpic">
+      <img src="images\me.png" alt="">
+      <div class="quickstat">
+
+      <p>Language of Choice: Java</p>
+      <p>Professional Experience: Web Development</p>
+      <p>Strengths: Communication, Front-End Development</p>
+      <p>Passions: Mobile Development, Interfacing</p>
+
+    </div>
+
+    </div>
+    <div class="innerstat namebox">
+    <h2 id="word">Myra Richards</h2>
+    </div>
+  </div>
+</div>
+</div> <!-- container-->
+
+
+
+
+  </body>
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <p class="text-muted">Inquiries can be made to myrairichards@gmail.com</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+  $(function(){
+      $(".flip").flip();
+  });
+  </script>
+
+  <script src="gZ_script2.js" charset="utf-8"></script>
+</html>
