@@ -272,3 +272,7 @@ canvas {
   height: 400px;
   width: auto;
 }
+
+.index-photo {
+  border-radius: 50%;
+}
