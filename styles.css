@@ -12,7 +12,7 @@ beige = rgba(239, 246, 224, 1)
 
 body {
   background-color: rgba(174, 195, 176, 0.8);
-  font-family: 'Yu Gothic', cursive;
+  font-family: 'Yu Gothic', 'Arial', sans-serif;
   color: rgba(1, 22, 30, 1);
 
 
