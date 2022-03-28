@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.13.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.13.0/build/ol.js"></script>
+    <script src="scripts/main.js"></script>
+    <title>OpenLayers example</title>
+  </head>
+  <body id="body" onload="init()">
+    <main>
+      <div class="copyright">
+        <p>&copy Myra Richards | 2022 | NSCC</p>
+      </div>
+
+      <!-- title-block -->
+      <div class="title-block">
+
+        <!-- logo -->  
+        <div class="logo">
+          <img id="colImg" class="hide" src="images/COGS_MediumVertical2Colour.jpg" alt="">
+          <img id="bwImg" src="images/COGS_MediumVerticalBlack.jpg" alt="">
+        </div>
+        <!-- title -->  
+        <div class="title-text">
+          <h1>Tourist Attractions of Edinburgh, Scotland</h1>
+          <h4>Myra Richards  - W0455132 - PROG4004 - Assignment 3</h4>
+          <div class="radios">
+            
+            <!-- radio buttons for changing map style -->  
+            <div class="tile-btns">
+              <h4>Map Style</h4>
+              <div class="btns">
+                <input type="radio" id="baw" name="tiles" onclick="toggleTiles(true)" checked >
+                <label for="baw">Black & White</label><br>
+                <input type="radio" id="color" name="tiles" onclick="toggleTiles(false)">
+                <label for="color">Color</label><br>  
+              </div>
+            </div>
+                
+            <!-- radio buttons for showing/hiding layers -->  
+            <div class="layer-btns">
+              <h4>Layers</h4>
+              <div class="btns">
+                <input type="radio" id="layersOn" name="layers" onclick="toggleLayers(true)" checked>
+                <label for="layersOn">On</label><br>
+                <input type="radio" id="layersOff" name="layers" onclick="toggleLayers(false)">
+                <label for="layersOff">Off</label><br>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- title-block -->
+      
+      <!-- map-block -->
+      <div class="map-block">
+        <div id="myMap" class="map">
+          <!-- show coordinates -->  
+          <div class="coords" id="mousePosition"></div> 
+          <!-- legend -->  
+          <div id="legend" class="legend">
+            <h4>Legend</h4>
+            <table>
+              <tr>
+                <td class="fillBlue"></td>
+                <td>Water of Leith</td>
+              </tr>
+              <tr>
+                <td class="fillGold"></td>
+                <td>Castles</td>
+              </tr>
+              <tr>
+                <td class="fillRed"></td>
+                <td>The Royal Mile</td>
+              </tr>
+              <tr>
+                <td class="hillIcon"></td>
+                <td>The Seven Hills</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div><!-- map-block -->
+
+    </main>
+  </body>
+
+</html>
