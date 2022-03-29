@@ -144,7 +144,7 @@ body {
     height: 800px;
     width: 500px;
     margin: 0 auto;
-    margin-top: 4vh;
+    margin-top: 2rem;
     text-align: center;
 
 }
@@ -160,8 +160,8 @@ body {
 
 .flip h2 {
   color: rgba(57, 47, 90, 1) ;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
   font-size: 40px;
 
 }
@@ -179,7 +179,7 @@ body {
 
 .back img {
   width: 300px;
-  margin-top: 10vh;
+  margin-top: 2rem;
 }
 
 
@@ -227,7 +227,7 @@ body {
 }
 
 .statpic img {
-  margin: 4vh;
+  margin: 2rem;
   border-radius: 10px;
   width: 83%;
   opacity: 0.8;
