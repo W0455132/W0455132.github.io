@@ -73,7 +73,7 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(174, 195, 176, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 990px) {
   .navbar-brand {
     color: rgba(239, 246, 224, 1);
 
