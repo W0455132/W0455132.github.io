@@ -15,7 +15,7 @@ function makeHTMLCake() {
   var codeLine = ''
   for (var i = 0; i < imgBankCake.length; i++) {
     if( ((i%3==0) == true)||(i == 0)) {
-      codeLine += '<div class="rowpics" id="rowpics">'
+      codeLine += '<div class="row" id="rowpics">'
     }
     var imgSet = codeStart + imgBankCake[i] + codeEnd;
     // console.log(codeStart + imgBank[i] + codeEnd);
@@ -36,7 +36,7 @@ function makeHTMLCater() {
   var codeLine = ''
   for (var i = 0; i < imgBankCater.length; i++) {
     if( ((i%3==0) == true)||(i == 0)) {
-      codeLine += '<div class="rowpics" id="rowpics">'
+      codeLine += '<div class="row" id="rowpics">'
     }
     var imgSet = codeStart + imgBankCater[i] + codeEnd;
     // console.log(codeStart + imgBank[i] + codeEnd);
@@ -57,7 +57,7 @@ function makeHTMLPlate() {
   var codeLine = ''
   for (var i = 0; i < imgBankPlate.length; i++) {
     if( ((i%3==0) == true)||(i == 0)) {
-      codeLine += '<div class="rowpics" id="rowpics">'
+      codeLine += '<div class="row" id="rowpics">'
     }
     var imgSet = codeStart + imgBankPlate[i] + codeEnd;
     // console.log(codeStart + imgBank[i] + codeEnd);
