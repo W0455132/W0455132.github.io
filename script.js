@@ -11,7 +11,7 @@ var chart = new Chart(ctx, {
             label: 'My First dataset',
             backgroundColor: ['rgba(18, 69, 89, 1)', 'rgba(174, 195, 176, 1)', 'rgba(89, 131, 146, 1)', 'rgba(1, 22, 30, 1)'],
             borderColor: 'rgba(239, 246, 224, 1)',
-            data: [15,40,10,25]
+            data: [5,4,3,3]
         }]
     },
 
@@ -46,3 +46,4 @@ teal blue = rgba(89, 131, 146, 1)
 cambridge blue = rgba(174, 195, 176, 1)
 beige = rgba(239, 246, 224, 1)
 */
+

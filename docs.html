@@ -25,28 +25,30 @@
 
 
   <body>
-  <nav class="navbar navbar-default navbar-static-top">
-    <a href="stats.html" class="navbar-brand" id="tagline"> <img src="images\logo.jpg" alt="">Myra Richards</a>
-    <ul class="nav nav-pills">
-      <!--        <li class="nav-item active">-->
-      <!--          <a class="nav-link" href="stats.html">stats<span class="sr-only">(current)</span></a>-->
-      <!--        </li>-->
-      <li class="nav-item">
-        <a class="nav-link" href="stats.html">stats</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="xp.html">work experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="docs.html">documentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="web.html">web</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="mobi.html">mobile</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg">
+    <a href="index.html" class="navbar-brand" id="tagline"> <img src="images\logo.jpg" alt="">Myra Richards</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="stats.html">stats</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="xp.html">work experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="docs.html">documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">web</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="mobi.html">mobile</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <div class="intro">
@@ -55,7 +57,7 @@
         <div class="col-12 text-center">
           <hr class="m-4">
           <h2 data-toggle="collapse" href="#introCollapsedoc" >Diagrams and Documents</h2>
-          <p class="d-none d-md-block">Documentation and diagrams created as a part of my projects at NSCC.
+          <p class="page-description">Documentation and diagrams created as a part of my projects at NSCC.
           </p>
           <hr class="m-4">
         </div>
@@ -72,7 +74,104 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_adclock.jpg" alt="Card image cap">
+              <a href="docs\dinderAD.png" target="_blank"><img class="card-img-top" src="docs\dinderAD.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <h4 class="card-text">Activity Diagram - Dinder Restaurant Lifecycle</h4>
+                <p class="collapse card-text" id="dinderad">Activity Diagram describing logic behind the lifecycle
+                  of a restaurant within mobile application Dinder</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#dinderad">Description</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <a href="docs\dinderUCD.png" target="_blank"><img class="card-img-top" src="docs\dinderUCD.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <h4 class="card-text">Use Case Diagram - Dinder</h4>
+                <p class="collapse card-text" id="dinderucd">Use Case Diagram for mobile application Dinder with
+                  color coordinated development phases</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#dinderucd">Description</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <a href="docs\dinderSD.png" target="_blank"><img class="card-img-top" src="docs\dinderSD.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <h4 class="card-text">Sequence Diagram - Dinder</h4>
+                <p class="collapse card-text" id="dindersd">Sequence Diagram outlining interactions between mobile
+                application Dinder, Google Places API and Firebase Firestore</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#dindersd">Description</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <a href="docs\scramSB.png" target="_blank"><img class="card-img-top" src="docs\scramSB.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <h4 class="card-text">StoryBoard - SCRAM (Software for Comment Review and Management)</h4>
+                <p class="collapse card-text" id="scramsb">Storyboard indicating the flow of User Interface Screens
+                for Java application SCRAM</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#scramsb">Description</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <a href="docs\todoUCD.png" target="_blank"><img class="card-img-top" src="docs\todoUCD.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <h4 class="card-text">Use-Case Diagram - To Do App</h4>
+                <p class="collapse card-text" id="todoucd">Use Case Diagram for mobile project To Do App with
+                color coordinated development phases
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#todoucd">Description</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <a href="docs\todoCD.png" target="_blank"><img class="card-img-top" src="docs\todoCD.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <h4 class="card-text">To Do App - Class Diagram</h4>
+                <p class="collapse card-text" id="todocd">Class Diagram for mobile project To Do App</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#todocd">Description</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <a href="docs\d_adclock.jpg" target="_blank"><img class="card-img-top" src="docs\d_adclock.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Activity Diagram - Clock</h4>
                 <p class="collapse card-text" id="ad1desc">Activity Diagram describing the actions of a 24 hour clock</p>
@@ -87,7 +186,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_adpet.jpg" alt="Card image cap">
+              <a href="docs\d_adpet.jpg" target="_blank"><img class="card-img-top" src="docs\d_adpet.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Activity Diagram - Pet Adoption</h4>
                 <p class="collapse card-text" id="ad2desc">Activity Diagram describing the actions of adopting </p>
@@ -102,7 +201,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_adguess.jpg" alt="Card image cap">
+              <a href="docs\d_adguess.jpg" target="_blank"><img class="card-img-top" src="docs\d_adguess.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Activity Diagram - Guessing Game</h4>
                 <p class="collapse card-text" id="ad3desc">Activity Diagram describing the actions of a number-guessing game</p>
@@ -117,7 +216,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_adgp.jpg" alt="Card image cap">
+              <a href="docs\d_adgp.jpg" target="_blank"><img class="card-img-top" src="docs\d_adgp.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Blogger <br> Activity Diagram - Gameplay</h4>
                 <p class="collapse card-text" id="ad4desc">Activity Diagram describing gameplay for the new smash hit "Blogger"</p>
@@ -132,7 +231,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_sdblog.jpg" alt="Card image cap">
+              <a href="docs\d_sdblog.jpg" target="_blank"><img class="card-img-top" src="docs\d_sdblog.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Blogger <br>Sequence Diagram</h4>
                 <p class="collapse card-text" id="sd1desc">Sequence Diagram describing gameplay for the new smash hit "Blogger"</p>
@@ -147,7 +246,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_cdblog.jpg" alt="Card image cap">
+              <a href="docs\d_cdblog.jpg" target="_blank"><img class="card-img-top" src="docs\d_cdblog.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Blogger <br>Class Diagram</h4>
                 <p class="collapse card-text" id="cd1desc">Class Diagram describing the object class layout for the new smash hit "Blogger"</p>
@@ -162,7 +261,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_adgp.jpg" alt="Card image cap">
+              <a href="docs\d_adgp.jpg" target="_blank"><img class="card-img-top" src="docs\d_adgp.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Blogger <br> Activity Diagram - Gameplay</h4>
                 <p class="collapse card-text" id="ad5desc">Activity Diagram describing level selection for the new smash hit "Blogger"</p>
@@ -177,7 +276,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_ucdblog.jpg" alt="Card image cap">
+              <a href="docs\d_ucdblog.jpg" target="_blank"><img class="card-img-top" src="docs\d_ucdblog.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Blogger <br> Use-Case Diagram</h4>
                 <p class="collapse card-text" id="ucd1desc">Use-Case Diagram describing user-system interaction for the new smash hit "Blogger"</p>
@@ -192,7 +291,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_ucblog.jpg" alt="Card image cap">
+              <a href="docs\d_ucblog.jpg" target="_blank"><img class="card-img-top" src="docs\d_ucblog.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Blogger <br> Use-Cases</h4>
                 <p class="collapse card-text" id="uc1desc">Use-Cases describing user-system interaction for the new smash hit "Blogger"</p>
@@ -207,7 +306,7 @@
 
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="docs\d_ucdsc.jpg" alt="Card image cap">
+              <a href="docs\d_ucdsc.jpg" target="_blank"><img class="card-img-top" src="docs\d_ucdsc.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <h4 class="card-text">Use-Case Diagram - Starcraft</h4>
                 <p class="collapse card-text" id="ucd2desc">Activity Diagram describing user's interactions with the Starcraft server</p>
@@ -219,9 +318,9 @@
               </div>
             </div>
           </div>
-          </div>
-          </div>
-          </div>
+        </div>
+      </div>
+    </div>
 
 
 
